@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <title>Amba - Register</title>
+    <title>Amba - Claim a property</title>
 
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-sm register_background" style="padding-top:100px; padding-left: 15px">
                 <div class="pl-3 pt-2">
-                    <h1 class="text-white">Register</h1>
+                    <h1 class="text-white">Claim a Property</h1>
                 </div>
             </div>
         </div>
@@ -75,42 +75,32 @@
         <form action="/action_page.php" class="pt-0 pb-5 text-white register">
             <hr class="top pb-4">
             <div class="form-group">
-                <label for="email">Full name <span>(Required)</span></label>
+                <label for="address 1">Address line 1 <span>(Required)</span></label>
                 <hr style="border-top: 1px solid #ffffff;" />
-                <input type="email" class="form-control" id="input" placeholder="Example Name">
+                <input type="text" class="form-control" id="input" placeholder="Address example">
             </div>
             <div class="form-group">
-                <label for="pwd">Date of Birth</label>
+                <label for="postcode">Postcode <span>(Required)</span></label>
                 <hr style="border-top: 1px solid #ffffff;" />
-                <input type="" class="form-control" id="input" placeholder="01/01/1987">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Email Address <span>(Required)</span></label>
-                <hr style="border-top: 1px solid #ffffff;" />
-                <input type="" class="form-control" id="input" placeholder="example@gmail.com">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Address line 1 <span>(Required)</span></label>
-                <hr style="border-top: 1px solid #ffffff;" />
-                <input type="" class="form-control" id="input" placeholder="Address Example">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Postcode <span>(Required)</span></label>
-                <hr style="border-top: 1px solid #ffffff;" />
-                <input type="" class="form-control" id="input" placeholder="Postcode">
+                <input type="text" class="form-control" id="input" placeholder="Postcode">
             </div>
 
+            <button type="submit" class="btn btn-outline-warning btn-lg mb-3 btn-block register">Find address</button>
+            <p>Map</p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.721885342543!2d-0.6929861839620189!3d52.37546275468279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48779f4ed2b64ca3%3A0x6108e4aa49a61d2e!2sFineshade+Cl%2C+Barton+Seagrave%2C+Kettering+NN15+6SL!5e0!3m2!1sen!2suk!4v1552398994191" width="570" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
             <div class="form-group form-check text-center">
                 <label class="form-check-label text-white">
                     <input class="form-check-input" type="checkbox"> I agree to terms and conditions
                 </label>
             </div>
-            <button type="submit" class="btn btn-outline-warning btn-lg mb-3 btn-block register">Register Now</button>
-  
+
+            <button type="submit" class="btn btn-outline-warning btn-lg mb-3 btn-block register">Claim a property</button>
             <p class="text-center">Terms and privacy policy</p>
-            
-            </form>  
+
+            </form>
 
     </main><!-- /.container -->
 

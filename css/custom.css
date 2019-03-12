@@ -1,7 +1,13 @@
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: 70px;
+    padding-top: 55px;
 }
+
+body.register {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 0px;
+}
+
 
 .register_background{
     
@@ -21,7 +27,7 @@ body {
     background-color: #231f20;
 }
 
-#input.form-control {
+.register #input.form-control {
     background-color: #231f20;
     border: 0px solid;
     padding-left: 0px;
@@ -160,6 +166,90 @@ p.heading
 .large-text
 {
     font-size: 1.3em;
+}
+
+.listed #input.form-control {
+    background-color: #000;
+    border: 0px solid;
+    padding-left: 0px;
+    font-size: 1.4em;
+    color: #ffffff;
+
+}
+
+form.search input.form-control {
+    background-color: #000;
+    border: 0px solid;
+    padding-left: 0px;
+    font-size: 1.4em;
+    color: #ffffff;
+
+}
+
+form.search label{
+    font-size: 0.9em;
+    color: #4b4b4b;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+form.search span
+{
+    float: right;
+    margin-top: -5px;
+
+}
+
+form.search label
+{
+    color: #f59333;
+}
+
+.table{
+    color: #fff;
+    font-size: 0.8em;
+
+}
+
+.table td, .table th, .table thead th {
+     border: 0px;
+}
+
+.table input.form-check-input{
+    margin: 0px;
+    padding: 0px;
+}
+
+.total
+{
+    background-color: #f59333;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn
+{
+    border: 1px solid #f59333;
+    color: #f59333;
+}
+
+table tr:hover{
+    border: 1px solid #f59333;
+
+}
+
+table th
+{
+    padding-left: 25px !important;
+}
+
+div.embed-responsive
+{
+    background-color: red;
 }
 
 
