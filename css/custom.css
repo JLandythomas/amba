@@ -67,39 +67,102 @@ form hr.top
     padding-left: 10px;
 }
 
-.select-tiles
-{
-
-    min-height: 150px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-size: 2em;
-    padding-top: 20px;
-    color: #bdbdbd;
-    min-width: 150px;
-
-}
-
-.select-tiles:hover
-{
-    color: #fff;
-    background-image: linear-gradient(-90deg, #fca953, #ed8317);
-}
-
 h1.header{
     font-size: 1.8em;
 }
 
 .select-tiles a
 {
-    text-decoration: none;
     color: #bdbdbd;
+    display: inline-block;
+    padding: 20px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    padding-top: 30px;
 
 }
 
-.select-tiles a:hover{
+.select-tiles a:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #fca953, #ed8317);
+    -webkit-box-shadow: 1px 22px 46px 3px rgba(26,24,26,0.3);
+    -moz-box-shadow: 1px 22px 46px 3px rgba(26,24,26,0.3);
+    box-shadow: 1px 22px 46px 3px rgba(26,24,26,0.3);
+
+}
+
+.select-tiles i
+{
+    font-size: 0.8em;
+}
+
+img.headshot{
+    max-height: 80px;
+
+}
+
+.p-description h1
+{
+    font-size: 1.2em;
+}
+
+div.social i
+{
+    font-size: 2em;
+    color: #8e8e8e;
+}
+
+.social p
+{
+    font-size: 1.4em;
+}
+
+.black-background
+{
+    background: #000;
     color: #fff;
+
 }
+
+.results
+{
+    background-color: #363032;
+    border-radius: 5px;
+}
+
+p.heading
+{
+    font-size: 1.3em;
+}
+
+.light{
+    color: #6f6769;
+}
+
+.results ul
+{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.results ul li
+{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.large-text
+{
+    font-size: 1.3em;
+}
+
+
 
 
 
