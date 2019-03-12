@@ -3,7 +3,7 @@ body {
     padding-top: 55px;
 }
 
-body.register {
+body.register, body.index {
     font-family: 'Raleway', sans-serif;
     padding-top: 0px;
 }
@@ -27,7 +27,7 @@ body.register {
     background-color: #231f20;
 }
 
-.register #input.form-control {
+.register input.form-control, .claim input.form-control {
     background-color: #231f20;
     border: 0px solid;
     padding-left: 0px;
@@ -36,14 +36,14 @@ body.register {
     
 }
 
-.register label{
+.register label, .claim label{
     font-size: 0.9em;
     color: #4b4b4b;
     margin-bottom: 0px;
     width: 100%;
 }
 
-.register span
+.register span, .claim span
 {
     float: right;
     margin-top: -5px;
@@ -237,20 +237,69 @@ form.search label
     color: #f59333;
 }
 
+
 table tr:hover{
     border: 1px solid #f59333;
 
+
 }
+
 
 table th
 {
     padding-left: 25px !important;
 }
 
-div.embed-responsive
+body.index
 {
-    background-color: red;
+    background-image: url('/img/index_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+  background-position: center;
+
 }
+
+body.index .btn
+{
+    border: 1px solid #fff;
+    color: #f59333;
+    color: #fff;
+}
+
+body.index .btn:hover
+{
+    border: 1px solid #fff;
+    color: #f59333;
+
+}
+
+div.index i{
+    font-size: 5em;
+    color: #fff;
+
+}
+
+div.index a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+div.index a:hover, div.index i:hover {
+    text-decoration: none;
+    color: #000;
+
+}
+
+div.index img{
+    margin-bottom: 220px;
+    text-align: center;
+}
+
+
+
 
 
 
