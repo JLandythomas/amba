@@ -1,3 +1,5 @@
+/* body padding */
+
 body {
     font-family: 'Raleway', sans-serif;
     padding-top: 55px;
@@ -9,15 +11,15 @@ body.register, body.index {
 }
 
 
-.register_background{
-    
-    background-image: url(http://lorempixel.com/1920/200/business);
+div.register_background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/img/register_background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 200px;
     z-index: -1; 
 }
+
 
 .round_top{
     
@@ -27,7 +29,7 @@ body.register, body.index {
     background-color: #231f20;
 }
 
-.register input.form-control, .claim input.form-control {
+form.register input.form-control, form.claim input.form-control {
     background-color: #231f20;
     border: 0px solid;
     padding-left: 0px;
@@ -36,14 +38,14 @@ body.register, body.index {
     
 }
 
-.register label, .claim label{
+form.register label, .claim label{
     font-size: 0.9em;
     color: #4b4b4b;
     margin-bottom: 0px;
     width: 100%;
 }
 
-.register span, .claim span
+form.register span, .claim span
 {
     float: right;
     margin-top: -5px;
@@ -67,17 +69,12 @@ form hr.top
     border-radius: 1px 1px 1px 1px;
 }
 
-.collapse{
-    
-    background-color: darkorange;
-    padding-left: 10px;
-}
 
 h1.header{
     font-size: 1.8em;
 }
 
-.select-tiles a
+div.select-tiles a
 {
     color: #bdbdbd;
     display: inline-block;
@@ -91,7 +88,7 @@ h1.header{
 
 }
 
-.select-tiles a:hover
+div.select-tiles a:hover
 {
     text-decoration: none;
     color: #ffffff;
@@ -102,7 +99,7 @@ h1.header{
 
 }
 
-.select-tiles i
+div.select-tiles i
 {
     font-size: 0.8em;
 }
@@ -112,7 +109,7 @@ img.headshot{
 
 }
 
-.p-description h1
+div.p-description h1
 {
     font-size: 1.2em;
 }
@@ -123,19 +120,19 @@ div.social i
     color: #8e8e8e;
 }
 
-.social p
+div.social p
 {
     font-size: 1.4em;
 }
 
-.black-background
+div.black-background
 {
     background: #000;
     color: #fff;
 
 }
 
-.results
+div.results
 {
     background-color: #363032;
     border-radius: 5px;
@@ -150,14 +147,14 @@ p.heading
     color: #6f6769;
 }
 
-.results ul
+div.results ul
 {
     list-style-type: none;
     margin-left: 0px;
     padding-left: 0px;
 }
 
-.results ul li
+div.results ul li
 {
     margin-top: 10px;
     font-size: 0.8em;
@@ -281,13 +278,13 @@ div.index i{
 
 }
 
-div.index a{
+.index a{
     text-decoration: none;
     color: #fff;
 
 }
 
-div.index a:hover, div.index i:hover {
+.index a:hover, div.index i:hover {
     text-decoration: none;
     color: #000;
 
@@ -353,6 +350,8 @@ div.timeline hr{
     margin-bottom: 20px;
 
 }
+
+
 
 
 
