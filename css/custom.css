@@ -298,6 +298,62 @@ div.index img{
     text-align: center;
 }
 
+/* Video modal */
+
+.modal-dialog {
+
+    max-width: 800px;
+    margin: 30px auto;
+
+  }
+
+.modal-body {
+  position:relative;
+  padding: 0px;
+}
+
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+body.index .video-btn
+{
+    border: 0px;
+    background: transparent;
+}
+
+body.index .video-btn:hover
+{
+    border: 0px;
+    background: transparent;
+    color: #fff;
+}
+
+td.dots{
+    font-size: 2em;
+    line-height: 0.4em;
+}
+
+div.timeline p{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+div.timeline hr{
+    border-left: 2px solid #fff;
+    height: 80px;
+    margin-left: 50%;
+    margin-bottom: 20px;
+
+}
+
 
 
 
