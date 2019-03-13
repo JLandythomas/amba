@@ -5,77 +5,77 @@ body {
     padding-top: 55px;
 }
 
-body.register, body.index {
+body.register,
+body.index {
     font-family: 'Raleway', sans-serif;
     padding-top: 0px;
+    background-color: #000;
 }
 
 
-div.register_background{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/img/register_background.jpg);
+div.register_background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/register_background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 200px;
-    z-index: -1; 
+    z-index: -1;
 }
 
 
-.round_top{
-    
+.round_top {
+
     margin-top: -20px;
     border-radius: 15px 15px 0px 0px;
     z-index: 1;
     background-color: #231f20;
 }
 
-form.register input.form-control, form.claim input.form-control {
+form.register input.form-control,
+form.claim input.form-control {
     background-color: #231f20;
     border: 0px solid;
     padding-left: 0px;
     font-size: 1.4em;
     color: #ffffff;
-    
+
 }
 
-form.register label, .claim label{
+form.register label,
+.claim label {
     font-size: 0.9em;
     color: #4b4b4b;
     margin-bottom: 0px;
     width: 100%;
 }
 
-form.register span, .claim span
-{
+form.register span,
+.claim span {
     float: right;
     margin-top: -5px;
 
 }
 
- ::placeholder
-{
+::placeholder {
     color: #ffffff !important;
 }
 
-hr
-{
+hr {
     margin-bottom: 0px;
 }
 
-form hr.top
-{
+form hr.top {
     border-top: 3px solid #4b4b4b;
     width: 50px;
     border-radius: 1px 1px 1px 1px;
 }
 
 
-h1.header{
+h1.header {
     font-size: 1.8em;
 }
 
-div.select-tiles a
-{
+div.select-tiles a {
     color: #bdbdbd;
     display: inline-block;
     padding: 20px;
@@ -88,80 +88,69 @@ div.select-tiles a
 
 }
 
-div.select-tiles a:hover
-{
+div.select-tiles a:hover {
     text-decoration: none;
     color: #ffffff;
     background-image: linear-gradient(-90deg, #fca953, #ed8317);
-    -webkit-box-shadow: 1px 22px 46px 3px rgba(26,24,26,0.3);
-    -moz-box-shadow: 1px 22px 46px 3px rgba(26,24,26,0.3);
-    box-shadow: 1px 22px 46px 3px rgba(26,24,26,0.3);
+    -webkit-box-shadow: 1px 22px 46px 3px rgba(26, 24, 26, 0.3);
+    -moz-box-shadow: 1px 22px 46px 3px rgba(26, 24, 26, 0.3);
+    box-shadow: 1px 22px 46px 3px rgba(26, 24, 26, 0.3);
 
 }
 
-div.select-tiles i
-{
+div.select-tiles i {
     font-size: 0.8em;
 }
 
-img.headshot{
+img.headshot {
     max-height: 80px;
 
 }
 
-div.p-description h1
-{
+div.p-description h1 {
     font-size: 1.2em;
 }
 
-div.social i
-{
+div.social i {
     font-size: 2em;
     color: #8e8e8e;
 }
 
-div.social p
-{
+div.social p {
     font-size: 1.4em;
 }
 
-div.black-background
-{
+div.black-background {
     background: #000;
     color: #fff;
 
 }
 
-div.results
-{
+div.results {
     background-color: #363032;
     border-radius: 5px;
 }
 
-p.heading
-{
+p.heading {
     font-size: 1.3em;
 }
 
-.light{
+.light {
     color: #6f6769;
 }
 
-div.results ul
-{
+div.results ul {
     list-style-type: none;
     margin-left: 0px;
     padding-left: 0px;
 }
 
-div.results ul li
-{
+div.results ul li {
     margin-top: 10px;
     font-size: 0.8em;
 }
 
-.large-text
-{
+.large-text {
     font-size: 1.3em;
 }
 
@@ -183,42 +172,41 @@ form.search input.form-control {
 
 }
 
-form.search label{
+form.search label {
     font-size: 0.9em;
     color: #4b4b4b;
     margin-bottom: 0px;
     width: 100%;
 }
 
-form.search span
-{
+form.search span {
     float: right;
     margin-top: -5px;
 
 }
 
-form.search label
-{
+form.search label {
     color: #f59333;
 }
 
-.table{
+.table {
     color: #fff;
     font-size: 0.8em;
 
 }
 
-.table td, .table th, .table thead th {
-     border: 0px;
+.table td,
+.table th,
+.table thead th {
+    border: 0px;
 }
 
-.table input.form-check-input{
+.table input.form-check-input {
     margin: 0px;
     padding: 0px;
 }
 
-.total
-{
+.total {
     background-color: #f59333;
     border-radius: 5px;
     padding-top: 15px;
@@ -228,69 +216,64 @@ form.search label
     padding-right: 30px;
 }
 
-.btn
-{
+.btn {
     border: 1px solid #f59333;
     color: #f59333;
 }
 
 
-table tr:hover{
+table tr:hover {
     border: 1px solid #f59333;
 
 
 }
 
 
-table th
-{
+table th {
     padding-left: 25px !important;
 }
 
-body.index
-{
+body.index {
     background-image: url('/img/index_background.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     background-attachment: fixed;
-  background-position: center;
+    background-position: center;
 
 }
 
-body.index .btn
-{
+body.index .btn.register {
     border: 1px solid #fff;
     color: #f59333;
     color: #fff;
 }
 
-body.index .btn:hover
-{
+body.index .btn:hover {
     border: 1px solid #fff;
     color: #f59333;
 
 }
 
-div.index i{
+div.index i {
     font-size: 5em;
     color: #fff;
 
 }
 
-.index a{
+.index a {
     text-decoration: none;
     color: #fff;
 
 }
 
-.index a:hover, div.index i:hover {
+.index .video-btn:hover {
     text-decoration: none;
     color: #000;
 
 }
 
-div.index img{
+div.index img {
     margin-bottom: 220px;
     text-align: center;
 }
@@ -302,48 +285,47 @@ div.index img{
     max-width: 800px;
     margin: 30px auto;
 
-  }
+}
 
 .modal-body {
-  position:relative;
-  padding: 0px;
+    position: relative;
+    padding: 0px;
 }
 
 .close {
-  position:absolute;
-  right:-30px;
-  top:0;
-  z-index:999;
-  font-size:2rem;
-  font-weight: normal;
-  color:#fff;
-  opacity:1;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
 }
 
-body.index .video-btn
-{
-    border: 0px;
-    background: transparent;
-}
-
-body.index .video-btn:hover
-{
+body.index .video-btn {
     border: 0px;
     background: transparent;
     color: #fff;
 }
 
-td.dots{
+body.index .video-btn:hover {
+    border: 0px;
+    background: transparent;
+    color: #000;
+}
+
+td.dots {
     font-size: 2em;
     line-height: 0.4em;
 }
 
-div.timeline p{
+div.timeline p {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-div.timeline hr{
+div.timeline hr {
     border-left: 2px solid #fff;
     height: 80px;
     margin-left: 50%;
@@ -351,15 +333,19 @@ div.timeline hr{
 
 }
 
+.navbar-collapse {
+    background-color: #f59333 !important;
+    color: #fff !important;
+    padding-left: 50px;
+    border-left: 120px solid #fff;
+    padding-right: 0px;
+    margin-bottom: 0px !important;
+}
 
+.navbar-collapse .navbar {
+    padding-bottom: 0px !important;
+}
 
-
-
-
-
-
-
-
-
-
-
+.navbar-collapse a {
+    color: #fff !important;
+}

@@ -29,7 +29,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
         <a class="navbar-brand" href="#"><i class="far fa-envelope"></i></a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="/img/logo_tp.png" width="100" height="auto" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
 
 
 
-    <div class="container.full">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm register_background" style="padding-top:100px; padding-left: 15px">
                 <div class="pl-3 pt-2">
@@ -75,32 +75,32 @@
 
     </div>
 
-    <main role="main" class="container.full round_top pl-4 pr-4 pt-2 register">
+    <main role="main" class="container round_top pl-4 pr-4 pt-2 register">
 
-        <form action="/action_page.php" class="pt-0 pb-5 text-white claim">
+        <form action="/index.html" class="pt-0 pb-5 text-white claim">
             <hr class="top pb-4">
             <div class="form-group">
                 <label for="address 1">Address line 1 <span>(Required)</span></label>
                 <hr style="border-top: 1px solid #ffffff;" />
-                <input type="text" class="form-control" id="address1" placeholder="Address example">
+                <input type="text" class="form-control" id="address1" placeholder="Address example" required>
             </div>
             <div class="form-group">
                 <label for="postcode">Postcode <span>(Required)</span></label>
                 <hr style="border-top: 1px solid #ffffff;" />
-                <input type="text" class="form-control" id="postcode" placeholder="Postcode">
+                <input type="text" class="form-control" id="postcode" placeholder="Postcode" required>
             </div>
 
             <button type="submit" class="btn btn-outline-warning btn-lg mb-3 btn-block register">Find address</button>
             <p>Map</p>
 
 
-                <div class="embed-responsive embed-responsive-4by3 mb-4">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.721885342543!2d-0.6929861839620189!3d52.37546275468279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48779f4ed2b64ca3%3A0x6108e4aa49a61d2e!2sFineshade+Cl%2C+Barton+Seagrave%2C+Kettering+NN15+6SL!5e0!3m2!1sen!2suk!4v1552398994191" width="570" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+            <div class="embed-responsive embed-responsive-4by3 mb-4">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.721885342543!2d-0.6929861839620189!3d52.37546275468279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48779f4ed2b64ca3%3A0x6108e4aa49a61d2e!2sFineshade+Cl%2C+Barton+Seagrave%2C+Kettering+NN15+6SL!5e0!3m2!1sen!2suk!4v1552398994191" width="570" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 
             <div class="form-group form-check text-center">
                 <label class="form-check-label text-white">
-                    <input class="form-check-input" type="checkbox"> I agree to terms and conditions
+                    <input class="form-check-input" type="checkbox" required> I agree to terms and conditions
                 </label>
             </div>
 
