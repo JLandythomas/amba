@@ -78,13 +78,15 @@ h1.header {
 div.select-tiles a {
     color: #bdbdbd;
     display: inline-block;
-    padding: 20px;
-    min-height: 150px;
-    min-width: 150px;
+    padding: 0px;
+    min-width: 160px;
+    min-height: 160px;
+    width: 20%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 1.6em;
-    padding-top: 30px;
+    padding-top: 40px;
+    background-color: #fff;
 
 }
 
@@ -100,6 +102,7 @@ div.select-tiles a:hover {
 
 div.select-tiles i {
     font-size: 0.8em;
+
 }
 
 img.headshot {
@@ -219,6 +222,13 @@ form.search label {
 .btn {
     border: 1px solid #f59333;
     color: #f59333;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:active {
+    color: #fff;
+    background-color: #f59333;
+
 }
 
 

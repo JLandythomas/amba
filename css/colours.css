@@ -1,0 +1,185 @@
+body.register,
+body.index {
+
+    background-color: #000;
+}
+
+
+div.register_background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/register_background.jpg);
+
+}
+
+
+.round_top {
+    background-color: #231f20;
+}
+
+form.register input.form-control,
+form.claim input.form-control {
+    background-color: #231f20;
+    border: 0px solid;
+    color: #ffffff;
+}
+
+form.register label,
+.claim label {
+    color: #4b4b4b;
+
+}
+
+
+::placeholder {
+    color: #ffffff !important;
+}
+
+
+
+form hr.top {
+    border-top: 3px solid #4b4b4b;
+}
+
+
+div.select-tiles a {
+    color: #bdbdbd;
+
+}
+
+div.select-tiles a:hover {
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #fca953, #ed8317);
+
+}
+
+div.social i {
+    color: #8e8e8e;
+}
+
+div.black-background {
+    background: #000;
+    color: #fff;
+
+}
+
+div.results {
+    background-color: #363032;
+}
+
+.light {
+    color: #6f6769;
+}
+
+.listed #input.form-control {
+    background-color: #000;
+    border: 0px solid;
+    color: #ffffff;
+
+}
+
+form.search input.form-control {
+    background-color: #000;
+    border: 0px solid;
+    color: #ffffff;
+
+}
+
+form.search label {
+    color: #4b4b4b;
+}
+
+
+form.search label {
+    color: #f59333;
+}
+
+.table {
+    color: #fff;
+
+}
+
+.total {
+    background-color: #f59333;
+}
+
+.btn {
+    border: 1px solid #f59333;
+    color: #f59333;
+}
+
+
+table tr:hover {
+    border: 1px solid #f59333;
+
+
+}
+
+body.index .btn.register {
+    border: 1px solid #fff;
+    color: #f59333;
+    color: #fff;
+}
+
+body.index .btn:hover {
+    border: 1px solid #fff;
+    color: #f59333;
+
+}
+
+div.index i {
+    color: #fff;
+
+}
+
+.index a {
+    color: #fff;
+
+}
+
+.index .video-btn:hover {
+    color: #000;
+
+}
+
+
+/* Video modal */
+
+.modal-dialog {
+
+    max-width: 800px;
+    margin: 30px auto;
+
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    color: #fff;
+}
+
+body.index .video-btn {
+    background: transparent;
+    color: #fff;
+}
+
+body.index .video-btn:hover {
+    background: transparent;
+    color: #000;
+}
+
+
+div.timeline hr {
+    border-left: 2px solid #fff;
+
+}
+
+.navbar-collapse {
+    background-color: #f59333 !important;
+    color: #fff !important;
+}
+
+.navbar-collapse a {
+    color: #fff !important;
+}
