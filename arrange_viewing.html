@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <title>Amba - Claim a property</title>
+    <title>Amba - Arrange viewing</title>
 
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
@@ -21,15 +21,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="/css/custom.css" rel="stylesheet" type="text/css">
-
-
 </head>
 
-<body class="register">
+<body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
         <a class="navbar-brand" href="#"><i class="far fa-envelope"></i></a>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
             <img src="/img/logo_tp.png" width="100" height="auto" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,56 +56,85 @@
                 </li>
             </ul>
 
+            <div class="">
+                <i class="fab fa-facebook-f" style="margin-right: 10px;"></i>
+                <i class="fab fa-twitter" style="margin-right: 10px;"></i>
+                <i class="fab fa-instagram" style="margin-right: 10px;"></i>
+            </div>
+
         </div>
 
     </nav>
 
+    <main role="main" class="container-fluid pl-0 pr-0">
 
+        <div class="container pr-5 pb-2">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm register_background" style="padding-top:100px; padding-left: 15px">
-                <div class="pt-2 container">
-                    <h1 class="text-white">Claim a Property</h1>
+            <div class="row p-description mt-4">
+                <div class="col-10 pl-4">
+                    <h1 class="header">Name, Last Name</h1>
+                    <p class="small">DOB. 1987.</p>
+                </div>
+                <div class="col-2">
+                    <img src="img/headshot.jpg" class="rounded-circle headshot img-fluid" alt="headshot">
                 </div>
             </div>
         </div>
 
-    </div>
+        <div class="container-fluid pl-0 pr-0" style="background: #f2f2f2;">
 
-    <main role="main" class="container round_top pl-4 pr-4 pt-2 register">
+            <div class="container pl-0 pr-0">
 
-        <form action="/index.html" class="pt-0 pb-5 text-white claim">
-            <hr class="top pb-4">
-            <div class="form-group">
-                <label for="address 1">Address line 1 <span>(Required)</span></label>
-                <hr style="border-top: 1px solid #ffffff;" />
-                <input type="text" class="form-control" id="address1" placeholder="Address example" required>
+                <div class="row pt-4 pl-4 pr-3 mr-0 mb-3">
+                    <div class="col">
+                        <h1 class="header mb-3">To Sell - Property Name</h1>
+                        <p>Select an option here to buy sell or let.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row text-center pl-3 pr-0 mr-0">
+                    <div class=" col-6 col-md-3 select-tiles small">
+                        <a href="/listed.html" class="text-center">
+                            <p class="text-center">Arrange a <br />viewing</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 select-tiles small">
+                        <a href="" class="text-center">
+                            <p>Offer <br />History</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 select-tiles small">
+                        <a href="" class="text-center">
+                            <p>Request <br />Overview</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 select-tiles small">
+                        <a href="" class="text-center">
+                            <p><img src="/img/logo_tp.png" style="width: 100px;"><br />assist</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row text-center social pt-4 pb-5">
+                    <div class="col-12">
+                        <p class="mb-4">Share on:</p>
+                        <i class="fab fa-facebook-f" style="margin-right: 70px;"></i>
+                        <i class="fab fa-twitter" style="margin-right: 70px;"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="postcode">Postcode <span>(Required)</span></label>
-                <hr style="border-top: 1px solid #ffffff;" />
-                <input type="text" class="form-control" id="postcode" placeholder="Postcode" required>
+
+            <div class="container-fluid find-a-property text-center">
+                <p><a href="">Find a property</a></p>
             </div>
 
-            <button type="submit" class="btn btn-outline-warning btn-lg mb-3 btn-block register">Find address</button>
-            <p>Map</p>
+
+        </div>
 
 
-            <div class="embed-responsive embed-responsive-4by3 mb-4">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.721885342543!2d-0.6929861839620189!3d52.37546275468279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48779f4ed2b64ca3%3A0x6108e4aa49a61d2e!2sFineshade+Cl%2C+Barton+Seagrave%2C+Kettering+NN15+6SL!5e0!3m2!1sen!2suk!4v1552398994191" width="570" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
-            <div class="form-group form-check text-center">
-                <label class="form-check-label text-white">
-                    <input class="form-check-input" type="checkbox" required> I agree to terms and conditions
-                </label>
-            </div>
-
-            <button type="submit" class="btn btn-outline-warning btn-lg mb-3 btn-block register">Claim a property</button>
-            <p class="text-center">Terms and privacy policy</p>
-
-        </form>
 
     </main><!-- /.container -->
 

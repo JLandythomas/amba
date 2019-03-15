@@ -1,13 +1,21 @@
 /* body padding */
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 55px;
+    font-weight: 300;
+}
+
+.form-control,
+h1,
+h2,
+p {
+    font-weight: 300;
 }
 
 body.register,
 body.index {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 0px;
     background-color: #000;
 }
@@ -36,8 +44,8 @@ form.claim input.form-control {
     background-color: #231f20;
     border: 0px solid;
     padding-left: 0px;
-    font-size: 1.4em;
-    color: #ffffff;
+    font-size: 1.3em;
+    color: #e3e3e3;
 
 }
 
@@ -50,9 +58,11 @@ form.register label,
 }
 
 form.register span,
-.claim span {
+form.claim span,
+form.search span {
     float: right;
     margin-top: -5px;
+    font-size: 0.8em;
 
 }
 
@@ -90,6 +100,17 @@ div.select-tiles a {
 
 }
 
+div.small a {
+    min-width: 140px;
+    min-height: 140px;
+    width: 20%;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    padding-top: 40px;
+    background-color: #fff;
+
+}
+
 div.select-tiles a:hover {
     text-decoration: none;
     color: #ffffff;
@@ -107,6 +128,8 @@ div.select-tiles i {
 
 img.headshot {
     max-height: 80px;
+    min-height: 50px;
+    min-width: 50px;
 
 }
 
@@ -182,12 +205,6 @@ form.search label {
     width: 100%;
 }
 
-form.search span {
-    float: right;
-    margin-top: -5px;
-
-}
-
 form.search label {
     color: #f59333;
 }
@@ -234,7 +251,6 @@ form.search label {
 
 table tr:hover {
     border: 1px solid #f59333;
-
 
 }
 
@@ -358,4 +374,25 @@ div.timeline hr {
 
 .navbar-collapse a {
     color: #fff !important;
+}
+
+p.small a {
+    color: #fff;
+}
+
+div.find-a-property {
+    text-decoration: none;
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #fca953, #ed8317);
+    -webkit-box-shadow: 1px 22px 46px 3px rgba(26, 24, 26, 0.3);
+    -moz-box-shadow: 1px 22px 46px 3px rgba(26, 24, 26, 0.3);
+    box-shadow: 1px 22px 46px 3px rgba(26, 24, 26, 0.3);
+    min-height: 80px;
+    padding-top: 25px;
+    font-size: 1.3em;
+}
+
+div.find-a-property a {
+    color: #fff;
+    text-decoration: none;
 }
