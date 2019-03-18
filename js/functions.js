@@ -12,14 +12,17 @@ $(document).ready(function () {
     $(".register-button").click(function () {
         calculate();
     });
-    $(".reset").click(function () {});
 });
 
 function calculate() {
     var jsonData = {};
-    jsonData["name"] = $("input[name='name']").val();
+    jsonData["assetValue"] = $("input[name='purchasePrice']").val();
+    jsonData["depositAmount"] = $("input[name='depositAmount']").val();
+    jsonData["productType"] = $("input[name='productType']").val();
+    jsonData["earlyRepaymentPeriod"] = $("input[name='earlyRepaymentPeriod']").val();
+    jsonData["term"] = parseInt($("select[name='term']").find(":selected").text()) * 12;
     //console.log(parseInt($("select[name='term']").find(":selected").text()));
-    ajaxCallRequest("get", "select_option.html", jsonData, {
+    ajaxCallRequest("get", endPoint + "/loan/find", jsonData, {
         "Authorization": 'Bearer ' + token
     }, 'mortgageCalculator');
 }
@@ -52,3 +55,22 @@ function ajaxCallRequest(f_method, f_url, f_data, f_headers, callbackMethod) {
         token = data.token;
     }
 }
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
+
+    }
+    return (false);
+}
+
+
+$(document).ready(function () {
+    $(".register-name").text(getQueryVariable("name").replace('+', ' '));
+    $(".dob").text(getQueryVariable("dob"));
+});
