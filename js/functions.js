@@ -10,22 +10,9 @@ var password = "test1234";
 $(document).ready(function () {
     authenticate();
     $(".register-button").click(function () {
-        calculate();
+        registerUser();
     });
 });
-
-function calculate() {
-    var jsonData = {};
-    jsonData["assetValue"] = $("input[name='purchasePrice']").val();
-    jsonData["depositAmount"] = $("input[name='depositAmount']").val();
-    jsonData["productType"] = $("input[name='productType']").val();
-    jsonData["earlyRepaymentPeriod"] = $("input[name='earlyRepaymentPeriod']").val();
-    jsonData["term"] = parseInt($("select[name='term']").find(":selected").text()) * 12;
-    //console.log(parseInt($("select[name='term']").find(":selected").text()));
-    ajaxCallRequest("get", endPoint + "/loan/find", jsonData, {
-        "Authorization": 'Bearer ' + token
-    }, 'mortgageCalculator');
-}
 
 function authenticate() {
     var form = $('.register');
@@ -33,6 +20,30 @@ function authenticate() {
     jsonData["email"] = email;
     jsonData["password"] = password;
     ajaxCallRequest("post", endPoint + "/login", jsonData, '', 'setToken');
+}
+
+function registerUser() {
+    var jsonData = {};
+    jsonData["name"] = $("input[name='name']").val();
+    jsonData["dob"] = $("input[name='dob']").val();
+    jsonData["email"] = $("input[name='email']").val();
+    jsonData["address1"] = $("input[name='address1']").val();
+    jsonData["postcode"] = $("input[name='postcode']").val();
+    jsonData["password"] = $("input[name='password']").val();
+    jsonData["password-confirmation"] = $("input[name='password-confirmation']").val();
+    ajaxCallRequest("post", endPoint + "/register", jsonData, {
+        "Authorization": 'Bearer ' + token
+    }, 'register');
+
+}
+
+function setToken(data) {
+    token = data.token;
+}
+
+function register(data) {
+    console.log(data);
+    $(".test").text(name);
 }
 
 
@@ -50,27 +61,4 @@ function ajaxCallRequest(f_method, f_url, f_data, f_headers, callbackMethod) {
             window[callbackMethod](data);
         }
     });
-
-    function setToken(data) {
-        token = data.token;
-    }
 }
-
-function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split("=");
-        if (pair[0] == variable) {
-            return pair[1];
-        }
-
-    }
-    return (false);
-}
-
-
-$(document).ready(function () {
-    $(".register-name").text(getQueryVariable("name").replace('+', ' '));
-    $(".dob").text(getQueryVariable("dob"));
-});

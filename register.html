@@ -19,7 +19,6 @@
 
     <!-- Place your stylesheet here-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="/css/custom.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -72,7 +71,7 @@
         <div class="row">
             <div class="col-sm register_background" style="padding-top:100px; padding-left: 15px">
                 <div class="pt-2 container">
-                    <h1 class="text-white">Register</h1>
+                    <h1 class="text-white test">Register</h1>
                 </div>
             </div>
         </div>
@@ -81,7 +80,7 @@
 
     <main role="main">
 
-        <form action="/select_option.html" class="pt-0 pb-1 mb-4 text-white register">
+        <form action="" class="pt-0 pb-1 mb-4 text-white register" oninput='password2.setCustomValidity(password2.value != password.value ? "Passwords do not match." : "")'>
 
             <div class="container round_top pl-4 pr-4 pt-2 pb-2 mb-3 register">
 
@@ -115,7 +114,12 @@
                 <div class="form-group">
                     <label for="name">Password <span>(Required)</span></label>
                     <hr style="border-top: 1px solid #ffffff;" />
-                    <input type="password" class="form-control" id="password" placeholder="Password" name="name" required>
+                    <input type="password" class="form-control" id="password" placeholder="********" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Confirm Password <span>(Required)</span></label>
+                    <hr style="border-top: 1px solid #ffffff;" />
+                    <input type="password" class="form-control" id="confirm-password" placeholder="********" name="password2" required>
                 </div>
 
             </div>
