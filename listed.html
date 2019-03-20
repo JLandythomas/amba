@@ -19,7 +19,6 @@
 
     <!-- Place your stylesheet here-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="/css/custom.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -68,14 +67,14 @@
 
     <main role="main" class="container-fluid listed ml-0 mr-0 pl-0 pr-0">
 
-        <form action="/listed-radio.html">
+        <form action="" class="listed">
 
             <div class="container pr-5 pb-2">
 
                 <div class="row p-description mt-4 pb-3">
                     <div class="col-10">
-                        <h1 class="header">Name, Last Name</h1>
-                        <p class="small">DOB. 1987.</p>
+                        <h1 class="header name">Name, Last Name</h1>
+                        <p class="small dob">DOB. 1987.</p>
                     </div>
                     <div class="col-2">
                         <img src="img/headshot.jpg" class="rounded-circle headshot img-fluid" alt="headshot">
@@ -88,7 +87,7 @@
                     <div class="row mt-4">
                         <div class="col">
                             <h1 class="header mb-4">To Rent</h1>
-                            <p class="large-text">&lt; &nbsp;4 Properties listed</p>
+                            <p class="large-text">&lt; &nbsp;<span class="number-of-results">40</span>&nbsp;Properties listed</p>
                             <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         </div>
                     </div>
@@ -100,20 +99,12 @@
                     <div class="row pb-5">
                         <div class="col pt-3 pr-4">
                             <p class="heading">Added to <br />Wishlist</p>
-                            <ul>
-                                <li>1 Example street, Postcode</li>
-                                <li>1 Example street, Postcode</li>
-                                <li>1 Example street, Postcode</li>
-                                <li>1 Example street, Postcode</li>
+                            <ul class="wishlist">
                             </ul>
                         </div>
                         <div class="col pt-3 pl-4">
                             <p class="heading">Access <br />Requests</p>
-                            <ul>
-                                <li>1 Example street, Postcode</li>
-                                <li>1 Example street, Postcode</li>
-                                <li>1 Example street, Postcode</li>
-                                <li>1 Example street, Postcode</li>
+                            <ul class="requests">
                             </ul>
                         </div>
 
@@ -123,7 +114,7 @@
 
                 <div class="container pl-0 pr-0">
 
-                    <button type="submit" class="btn btn-outline-warning btn-lg mt-4 pt-3 pb-3 btn-block register">Find a Property</button>
+                    <button type="button" class="btn btn-outline-warning btn-lg mt-4 pt-3 pb-3 btn-block register">Find a Property</button>
 
                 </div>
             </div>
@@ -136,7 +127,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="/js/functions.js"></script>
+    <script src="/js/listed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 

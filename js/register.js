@@ -4,13 +4,13 @@ Custom Javascript
 
 var token;
 var endPoint = "//api.property.jacklogic.com/api";
-var email = "ben@jacklogic.com";
+var email = "ben2@jacklogic.com";
 var password = "test1234";
 
 $(document).ready(function () {
     authenticate();
     $(".register-button").click(function () {
-        registerUser();
+
     });
 });
 
@@ -19,7 +19,13 @@ function authenticate() {
     var jsonData = {};
     jsonData["email"] = email;
     jsonData["password"] = password;
-    ajaxCallRequest("post", endPoint + "/login", jsonData, '', 'setToken');
+    ajaxCallRequest("post", endPoint + "/login", jsonData, '', 'authenticated');
+
+}
+
+function authenticated(data) {
+    setToken(data);
+    registerUser();
 }
 
 function registerUser() {
@@ -31,7 +37,7 @@ function registerUser() {
     jsonData["postcode"] = $("input[name='postcode']").val();
     jsonData["password"] = $("input[name='password']").val();
     jsonData["password-confirmation"] = $("input[name='password-confirmation']").val();
-    ajaxCallRequest("post", endPoint + "/register", jsonData, {
+    ajaxCallRequest("post", endPoint + "/", jsonData, {
         "Authorization": 'Bearer ' + token
     }, 'register');
 
